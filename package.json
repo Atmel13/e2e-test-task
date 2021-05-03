@@ -1,0 +1,24 @@
+{
+  "name": "E2E-homework",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "tsc && protractor output_js/conf.js",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^7.0.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  },
+  "dependencies": {
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^10.5.2",
+    "@types/randomstring": "^1.1.6",
+    "protractor": "^5.4.2",
+    "randomstring": "^1.1.5",
+    "typescript": "^3.4.1"
+  }
+}
