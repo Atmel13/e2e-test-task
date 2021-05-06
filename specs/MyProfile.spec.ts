@@ -31,8 +31,7 @@ describe('My profile. Client Area.', () => {
 
         await loginpage.logIn(Credentials.email, Credentials.password);
         await header.selectOptionInProfileMenu(header.profileItemInProfileMenu);
-        await expect(await userProfile.isProfilePageOpen()).toBeTruthy('1. The "Prifile" page is not opened');
-        await browser.sleep(15000);
+        await expect(await userProfile.isProfilePageOpen()).toBeTruthy('1. The "Profile" page is not opened');
         const userProfileDetailsCase: IUserProfileItems = await userProfile.getAllItemsProperties();
 
         expect(userProfileDetailsPreconditions).toEqual(userProfileDetailsCase, '2. Objects are not equal')
